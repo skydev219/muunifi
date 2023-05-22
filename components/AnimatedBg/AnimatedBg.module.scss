@@ -1,0 +1,37 @@
+@import "../../styles/base/variables.scss";
+
+.root {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    display: block;
+    width: auto;
+    height: 200%;
+    animation: spin 30s linear infinite;
+  }
+
+  @include media-breakpoint-down(md) {
+  }
+}
+
+@keyframes spin {
+  25% {
+    transform: rotate(90deg) translateX(10%) translateY(-10%);
+  }
+  50% {
+    transform: rotate(180deg) translateX(25%) translateY(0%);
+  }
+  75% {
+    transform: rotate(270deg) translateX(10%) translateY(10%);
+  }
+  100% {
+    transform: rotate(360deg) translateX(0) translateY(0);
+  }
+}

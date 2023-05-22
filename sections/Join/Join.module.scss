@@ -1,0 +1,101 @@
+@import "../../styles/base/variables.scss";
+
+.root {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    font-size: 4rem;
+    color: $white;
+    user-select: none;
+    line-height: 1.2;
+  }
+
+  @include media-breakpoint-down(lg) {
+    height: auto;
+    min-height: 0;
+    padding: 2rem 0;
+    display: block;
+
+    h1 {
+      font-size: 3.75rem;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.prefinery {
+  display: flex;
+  justify-content: center;
+}
+
+.signup {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: $font-family-secondary;
+  margin: 0 1rem;
+}
+
+.markets {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+
+  > * {
+    margin: 0 0.6rem;
+  }
+
+  @include media-breakpoint-down(lg) {
+    justify-content: center;
+    margin-bottom: 5rem;
+
+    > * {
+      margin: 0 0.5rem;
+    }
+
+    button {
+      width: 205px;
+      justify-content: center;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    > * {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.heading {
+  height: 280px;
+
+  @include media-breakpoint-down(lg) {
+    height: 240px;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: 200px;
+  }
+}

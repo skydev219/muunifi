@@ -1,0 +1,10 @@
+.root {
+  pointer-events: all;
+  height: 100%;
+  transition: opacity 300ms ease;
+
+  &:global(.active-mobile) {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

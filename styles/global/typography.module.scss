@@ -1,0 +1,74 @@
+@import "../base/variables.scss";
+
+.title {
+  font-size: 7.5rem;
+  font-weight: 700;
+  color: $white;
+  line-height: 0.9;
+  font-family: $font-family-secondary;
+} 
+
+.textPrimary {
+  font-size:  0.875rem;
+  font-weight: 600;
+  color: $primary;
+  letter-spacing: 0.03125rem;
+  line-height: 1.2;
+}
+
+.textRegular {
+  font-size: 1.5rem;
+  color: $white;
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.textRegular2 {
+  font-size: 1.5rem;
+  color: $white;
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.title2 {
+  font-size: 4rem;
+  color: $white;
+  line-height: 0.9;
+}
+
+.title3 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: $font-family-base;
+  color: $white;
+  line-height: 0.9;
+}
+
+@include media-breakpoint-down(lg) {
+  .title3 {
+    font-size: 1.75rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .textRegular2 {
+    font-size: 0.875rem;
+  }
+  .title2 {
+    font-size: 2.1875rem;
+  }
+  .title3 {
+    font-size: 1.5rem;
+  }
+  .textRegular {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}

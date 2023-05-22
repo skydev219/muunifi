@@ -1,0 +1,40 @@
+@import "./variables.scss";
+
+.btn {
+  display: inline-flex;
+  height: $btn-height;
+  border: 1px solid $white;
+  padding: 0 1.3rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 25px;
+  outline: none;
+  color: $white;
+  transition: all $transition ease;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.btn-info {
+  height: 60px;
+  border-radius: 8px;
+  padding:0 1rem;
+
+  img {
+    display: block;
+    height: calc(100% - 15px);
+    width: auto;
+    transition: all $transition ease;
+  }
+
+  &:hover {
+    img {
+      filter: invert(1);
+    }
+  }
+}

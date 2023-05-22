@@ -1,0 +1,47 @@
+@import "../../styles/base/variables.scss";
+
+.root {
+  position: relative;
+  padding-top: calc($header-height + 50px);
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: $white;
+    user-select: none;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 2rem;
+    color: $white;
+    user-select: none;
+    line-height: 1.2;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }  
+  }
+}

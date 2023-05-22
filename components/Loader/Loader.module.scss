@@ -1,0 +1,20 @@
+@import "../../styles/base/variables.scss";
+
+.root {
+  background-color: $c1;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: opacity $transition*10 ease;
+
+  &:global(.loaded) {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @include media-breakpoint-down(md) {
+  }
+}
